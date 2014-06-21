@@ -5,16 +5,14 @@
  * Assumptions: The mapping will be done by a unique Id from the giving elements.
  * 
  * @author Bruno Junqueira
- * @since 2014-06-15
  */
 
 
 /**
  * Dummy class to use in the examples.
  */
-class Element {
-	
-	
+class Element
+{
 	/**
 	 * Unique Id.
 	 * @var int
@@ -32,14 +30,7 @@ class Element {
 	public function __construct($id) {
 		$this->id = $id;
 	}
-
-
 }
-
-
-#
-# First implementation.
-#
 
 
 /**
@@ -61,19 +52,13 @@ function build_table ($Elements, &$hash_table = array())
 }
 
 
-#
-# Improving by adding more OO concepts.
-#
-
-
 /**
  * The hash table abstraction.
  * 
- * @version 2.0
+ * @version 2.0 - Improving by adding more OO concepts.
  */
-class HashTable {
-
-
+class HashTable
+{
 	/**
 	 * The hash table itself.
 	 * @var array
@@ -122,8 +107,6 @@ class HashTable {
 	{
 		return $this->table[$id];
 	}
-
-
 }
 
 
